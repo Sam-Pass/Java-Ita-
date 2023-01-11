@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Leitura{
+public static void main(String args[]){
+Scanner teclado=new Scanner(System.in);
+double valorHora,quantidadeHora,desconto,salarioBruto,salarioLiquido;
+System.out.println("Digite o Valor/Hora");
+valorHora=teclado.nextDouble();
+System.out.println("Digite a quantidade de horas trabalhadas");
+quantidadeHora=teclado.nextDouble();
+System.out.println("Digite Porcentagem de desconto");
+desconto=teclado.nextDouble();
+salarioBruto=(valorHora*quantidadeHora);
+System.out.println("Salário Bruto: "+salarioBruto);
+salarioLiquido=salarioBruto-(salarioBruto*desconto/100);
+System.out.println("Salário Liquido: "+salarioLiquido);
+}}
